@@ -310,6 +310,19 @@ namespace desknote
         {
             ClockBox1.Visible = false;
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            // 显示Form1
+            Main main = new Main();
+            main.ShowDialog();
+        }
     }
 
 }
